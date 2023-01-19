@@ -5,6 +5,7 @@ Overview
 ---
 The random name project provides a program which can
 read a namelist file and randomly call the roll.
+Module _easygui_ is required to run the program, use pip to install it.
 
 Basic Usage
 ---
