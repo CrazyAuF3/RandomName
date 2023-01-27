@@ -7,7 +7,7 @@ from sys import exit
 import os
 
 
-with open('config.txt', mode='r') as configFile:
+with open('config.txt', mode='r', encoding='utf-8') as configFile:
     _config: list = configFile.readlines()
     _config = list(map(lambda s: s.strip(), _config))
     # map function: map the operation at the head to the following list.
@@ -88,7 +88,7 @@ def about() -> None:  # the "about" page
 
 def generateNamelist(_list: str) -> list:
     # Read name.txt file and get the name list.
-    with open(_list, mode='r') as File:
+    with open(_list, mode='r', encoding='utf-8') as File:
         _name = File.readlines()
     return _name
 
